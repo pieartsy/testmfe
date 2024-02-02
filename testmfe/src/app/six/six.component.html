@@ -1,4 +1,4 @@
-<app-test [display]="display"></app-test>
 <p>
-  <input type="text" id="display" name="display" (input)="changeDisplay(display.value)" #display />
+  <input type="text" id="display" name="display" [(ngModel)]="display"/>
 </p>
+<app-fifteen-example [displayText]="display"></app-fifteen-example>

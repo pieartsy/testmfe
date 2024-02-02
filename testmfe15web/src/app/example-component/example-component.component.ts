@@ -6,10 +6,5 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./example-component.component.css']
 })
 export class ExampleComponentComponent {
-  @Input() display: any;
-  displayText: string = ""
-
-  onDisplayChange() {
-    this.displayText = this.display;
-  }
+  @Input() displayText: string = "";
 }

@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/testmfe15web/dist" />
       <excludeFolder url="file://$MODULE_DIR$/testmfe15web/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/angular-v6-tour-of-heroes" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

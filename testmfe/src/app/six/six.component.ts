@@ -8,15 +8,10 @@ import {EventEmitter} from "@angular/core";
 })
 export class SixComponent implements OnInit {
 
-  @Output() displayEvent = new EventEmitter<any>();
-
+  @Output() display: string = "";
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  changeDisplay(text) {
-    this.displayEvent.emit(text)
   }
 }

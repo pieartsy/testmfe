@@ -1,22 +1,12 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
-export class TestComponent implements OnInit {
+export class TestComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  @Input() display: any;
-  displayText: string = ""
-
-  onDisplayChange() {
-    this.displayText = this.display;
-  }
+  @Input() displayText: string;
 
 }
