@@ -1,4 +1,5 @@
 <p>
-  <input type="text" id="display" name="display" [(ngModel)]="display"/>
+  <label for="displayTitle">Title: </label><input type="text" id="displayTitle" name="displayTitle" [(ngModel)]="displayTitle"/>
+  <label for="displayTitle"> Text: </label><input type="text" id="displayText" name="displayText" [(ngModel)]="displayText"/>
 </p>
-<app-fifteen-example [displayText]="display"></app-fifteen-example>
+<app-fifteen-example [displayTitle]="displayTitle" [displayText]="displayText"></app-fifteen-example>

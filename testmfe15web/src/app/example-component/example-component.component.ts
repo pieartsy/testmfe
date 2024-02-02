@@ -1,4 +1,5 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { CardModule } from "primeng/card";
 
 @Component({
   selector: 'app-example-component',
@@ -7,4 +8,5 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class ExampleComponentComponent {
   @Input() displayText: string = "";
+  @Input() displayTitle: string = "";
 }

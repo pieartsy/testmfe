@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ExampleComponentComponent } from './example-component/example-component.component';
 import {createCustomElement} from "@angular/elements";
+import {CardModule} from "primeng/card";
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponentComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        CardModule
+    ],
   providers: [],
   exports: [
     ExampleComponentComponent
