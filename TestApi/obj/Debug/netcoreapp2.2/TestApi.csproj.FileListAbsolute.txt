@@ -1,0 +1,14 @@
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.csprojAssemblyReference.cache
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.csproj.CoreCompileInputs.cache
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.RazorAssemblyInfo.cache
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.RazorAssemblyInfo.cs
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.AssemblyInfoInputs.cache
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.AssemblyInfo.cs
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\bin\Debug\netcoreapp2.2\TestApi.deps.json
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\bin\Debug\netcoreapp2.2\TestApi.runtimeconfig.json
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\bin\Debug\netcoreapp2.2\TestApi.runtimeconfig.dev.json
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\bin\Debug\netcoreapp2.2\TestApi.dll
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\bin\Debug\netcoreapp2.2\TestApi.pdb
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.RazorTargetAssemblyInfo.cache
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.dll
+C:\Users\York Laptop 001\IdeaProjects\test-mfe\testapi\obj\Debug\netcoreapp2.2\TestApi.pdb
