@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ExampleComponentComponent } from './example-component/example-component.component';
 import {createCustomElement} from "@angular/elements";
 import {CardModule} from "primeng/card";
+import { HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {CardModule} from "primeng/card";
   ],
     imports: [
         BrowserModule,
-        CardModule
+        CardModule,
+        HttpClientModule
     ],
   providers: [],
   exports: [
