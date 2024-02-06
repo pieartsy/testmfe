@@ -9,6 +9,6 @@ namespace TestApi.Models
         {
         }
 
-        public DbSet<PetItem> PetItems { get; set; }
+        public DbSet<Pet> Pets { get; set; }
     }
 }

@@ -22,12 +22,16 @@ namespace TestApi
             Configuration = configuration;
         }
 
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<PetContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                        // Other service configurations...
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

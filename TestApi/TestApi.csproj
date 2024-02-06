@@ -9,6 +9,8 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="4.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2" />
 <!--     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.7.1" /> -->
 <!--     <PackageReference Include="System.Text.Encodings.Web" Version="5.0.0" /> -->
   </ItemGroup>
