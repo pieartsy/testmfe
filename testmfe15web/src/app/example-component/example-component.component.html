@@ -1,5 +1,17 @@
-Mirroring what you said from Angular 15 component and PrimeNG card!
-<p-card header="{{displayTitle}}">
-  <p class="m-0">{{displayText}}</p>
-  <p class="p-error">Test</p>
-</p-card>
+<div>
+  <form #petadd="ngForm" (ngSubmit)="addPet(petadd)" id="form-add">
+    <label for="name">Name: </label><input type="text" name="name" id="name" ngModel placeholder="Name of pet" required="true">
+    <label for="species">Species: </label><input type="text" name="species" id="species" ngModel placeholder="Species of pet" required="true">
+    <label for="personality">Personality: </label><input type="text" name="personality" id="personality" ngModel placeholder="Personality (<100 characters)" required="true">
+    <button type="submit" [disabled]="petadd.invalid">Send</button>
+  </form>
+</div>
+
+<div>
+  <form #petsearch="ngForm" (ngSubmit)="queryPet(petsearch)" id="form-search">
+    <label for="searchname">Search pet by name: </label><input type="text" name="searchname" id="searchname" ngModel placeholder="Name of pet" required="true">
+    <button type="submit" [disabled]="petsearch.invalid">Send</button>
+  </form>
+</div>
+
+<app-pet [queriedPet]="queriedPet" [submittedPet]="submittedPet"></app-pet>

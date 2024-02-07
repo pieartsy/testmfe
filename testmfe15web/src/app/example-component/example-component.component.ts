@@ -1,6 +1,18 @@
-import {ChangeDetectorRef, Component, ElementRef, Input, OnInit, Renderer2, ViewEncapsulation} from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  ElementRef, EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  Renderer2,
+  ViewEncapsulation
+} from '@angular/core';
 import { CardModule } from "primeng/card";
 import {HttpClient} from "@angular/common/http";
+import {NgForm} from "@angular/forms";
+import {query} from "@angular/animations";
+import {Pet} from "../pet";
 
 @Component({
   selector: 'app-example-component',
@@ -8,43 +20,21 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./example-component.component.css'],
   encapsulation: ViewEncapsulation.ShadowDom
 })
-export class ExampleComponentComponent implements OnInit {
-  @Input() displayText: string = "";
-  @Input() displayTitle: string = "";
+export class ExampleComponentComponent {
+  constructor() { }
 
-  constructor(
-    private http: HttpClient,
-    private renderer: Renderer2,
-    private elementRef: ElementRef,
-    private cdr: ChangeDetectorRef
-  ) {
+  queriedPet: string = "";
+  submittedPet: object = {};
+
+  addPet(form: NgForm) {
+    const name: string = form.value.name.trim();
+    const species: string = form.value.species.trim();
+    const personality: string = form.value.personality.trim();
+    this.submittedPet = {name, species, personality};
   }
 
-  private loadExternalStylesheet() {
-    this.http
-      .get('http://localhost:8080/primeNG.css', { responseType: 'text' })
-      .subscribe(
-        (cssContent: string) => {
-          this.applyStyles(cssContent);
-        },
-        (error: any) => {
-          console.error('Error loading external stylesheet: ', error);
-        }
-      );
+  queryPet(form: NgForm) {
+    console.log(form);
+    this.queriedPet = form.value.searchname;
   }
-
-  private applyStyles(cssContent?: string) {
-    const styleElement = this.renderer.createElement('style');
-    styleElement.innerHTML = cssContent;
-    const shadowRoot = this.elementRef.nativeElement.shadowRoot;
-    if (shadowRoot) {
-      shadowRoot.insertBefore(styleElement, shadowRoot.firstChild);
-      this.cdr.detectChanges();
-    }
-  }
-
-  ngOnInit(): void {
-    this.loadExternalStylesheet()
-  }
-
 }

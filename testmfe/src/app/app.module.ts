@@ -10,9 +10,9 @@ import { FormsModule } from "@angular/forms";
     AppComponent,
     SixComponent,
   ],
-  imports: [
-    BrowserModule, FormsModule
-  ],
+    imports: [
+        BrowserModule, FormsModule, FormsModule, FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

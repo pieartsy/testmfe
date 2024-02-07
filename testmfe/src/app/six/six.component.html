@@ -1,6 +1,17 @@
-<p>
-  <label for="displayTitle">Title: </label><input type="text" id="displayTitle" name="displayTitle" [(ngModel)]="displayTitle"/>
-  <label for="displayTitle"> Text: </label><input type="text" id="displayText" name="displayText" [(ngModel)]="displayText"/>
-</p>
-<app-fifteen-example [displayTitle]="displayTitle" [displayText]="displayText"></app-fifteen-example>
-<p class="p-error">Test</p>
+<h2>Angular 6 component</h2>
+<div>
+  <form #petadd="ngForm" (ngSubmit)="addPet(petadd)" id="form-add">
+    <label for="name">Name: </label><input type="text" name="name" id="name" ngModel placeholder="Name of pet" required="true">
+    <label for="species"> Species: </label><input type="text" name="species" id="species" ngModel placeholder="Species of pet" required="true">
+    <label for="personality"> Personality: </label><input type="text" name="personality" id="personality" ngModel placeholder="Personality (<100 characters)" required="true">
+    <button type="submit" [disabled]="petadd.invalid">Send</button>
+  </form>
+</div>
+
+<div>
+  <form #petsearch="ngForm" (ngSubmit)="queryPet(petsearch)" id="form-search">
+    <label for="searchname">Search pet by name: </label><input type="text" name="searchname" id="searchname" ngModel placeholder="Name of pet" required="true">
+    <button type="submit" [disabled]="petsearch.invalid">Send</button>
+  </form>
+</div>
+<app-fifteen-example [queriedPet]="queriedPet" [submittedPet]="submittedPet"></app-fifteen-example>
